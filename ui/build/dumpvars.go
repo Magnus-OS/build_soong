@@ -137,7 +137,7 @@ func dumpMakeVars(ctx Context, config Config, goals, vars []string, write_soong_
 
 // Variables to print out in the top banner
 var BannerVars = []string{
-        "SAKURA_VERSION",
+        "MAGNUS_VERSION",
 	"PLATFORM_VERSION_CODENAME",
 	"PLATFORM_VERSION",
 	"LINEAGE_VERSION",
@@ -183,7 +183,7 @@ func Banner(make_vars map[string]string) string {
      fmt.Fprintln(b, "* ╱╱╱╱╱╱╱╱╰━╯                                                             ")
      fmt.Fprintln(b, "* WELCOME TO PROJECT SAKURA                                               ")
      fmt.Fprintln(b, "==========================================================================")
-      fmt.Fprintf(b, "%s=%s\n", "SAKURA_VERSION", make_vars["SAKURA_VERSION"])
+      fmt.Fprintf(b, "%s=%s\n", "MAGNUS_VERSION", make_vars["MAGNUS_VERSION"])
       fmt.Fprintf(b, "%s=%s\n", "PLATFORM_VERSION_CODENAME", make_vars["PLATFORM_VERSION_CODENAME"])
       fmt.Fprintf(b, "%s=%s\n", "PLATFORM_VERSION", make_vars["PLATFORM_VERSION"])
       fmt.Fprintf(b, "%s=%s\n", "TARGET_PRODUCT", make_vars["TARGET_PRODUCT"])
